@@ -8,8 +8,11 @@ router.get('/', function(req, res, next) { // '/' é a RAIZ
   res.render('index', { titulo: 'MFLIX - LOGIN' });
 });
 
-router.get('/login', function(req, res, next) { // '/' é a RAIZ
-  res.render('login', { titulo: 'MFLIX - LOGIN' });
+router.post('/login', function(req, res, next){
+  // captura os dados do formulario HTML
+  const email = req.boby.campoEmail;
+  const senha = req.body.campoSenha;
+  //verifica se email e senha existem no BD
 });
 
 /*
