@@ -8,6 +8,10 @@ router.get('/', function(req, res, next) { // '/' é a RAIZ
   res.render('index', { titulo: 'MFLIX - LOGIN' });
 });
 
+router.get('/login', function(req, res, next) { // '/' é a RAIZ
+  res.render('login', { titulo: 'MFLIX - LOGIN' });
+});
+
 /*
 router.get('/lista', function(req, res, next) {
   res.render('listaCoisas', { titulo: 'Listagem' });
